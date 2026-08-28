@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otobo_package version="1.0">
+    <Name>LightAdmin-AutoRepliesAndSignatures</Name>
+    <Version>0.0.0</Version>
+    <Framework>11.0.x</Framework>
+    <Vendor>Rother OSS GmbH</Vendor>
+    <URL>https://otobo.io/</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <Description Lang="en">Enable the LightAdmin capability for the Signature and Auto Response features</Description>
+    <Filelist>
+        <File Permission="660" Location="Custom/Kernel/Modules/AdminAutoResponse.pm" />
+        <File Permission="660" Location="Custom/Kernel/Modules/AdminQueueAutoResponse.pm" />
+        <File Permission="660" Location="Custom/Kernel/Modules/AdminSignature.pm" />
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminAutoResponse.tt" />
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AdminSignature.tt" />
+        <File Permission="660" Location="Custom/Kernel/System/Queue.pm" />
+    </Filelist>
+</otobo_package>
