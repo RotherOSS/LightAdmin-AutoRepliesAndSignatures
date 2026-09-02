@@ -1508,7 +1508,7 @@ sub QueueListPermission {
     return $Permission;
 }
 
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
 
 =head2 QueueSignatureMemberList()
 
@@ -1629,5 +1629,5 @@ sub QueueAutoResponseMemberList {
     return %Queues;
 }
 
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 1;

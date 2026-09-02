@@ -31,11 +31,11 @@ sub new {
     # allocate new hash for object
     my $Self = {%Param};
     bless( $Self, $Type );
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
     if ( !$Param{AccessRw} && $Param{AccessRo} ) {
         $Self->{LightAdmin} = 1;
     }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 
     return $Self;
 }
@@ -65,7 +65,7 @@ sub Run {
         my %QueueData = $QueueObject->QueueGet(
             ID => $Param{ID},
         );
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
         if ( $Self->{LightAdmin} ) {
             $QueueData{Permission} = $QueueObject->QueueListPermission(
                 QueueIDs => [ $Param{ID} ],
@@ -83,7 +83,7 @@ sub Run {
                 );
             }
         }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 
         $LayoutObject->Block(
             Name => 'Overview',
@@ -106,7 +106,7 @@ sub Run {
         );
         for my $TypeID ( sort keys %TypeResponsesData ) {
 
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
 #            # get all valid Auto Responses data for appropriate Auto Responses type
 #            my %AutoResponseListByType = $AutoResponseObject->AutoResponseList(
 #                TypeID => $TypeID,
@@ -163,7 +163,7 @@ sub Run {
                     Class        => 'Modernize W50pc',
                 );
             }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
             $LayoutObject->Block(
                 Name => 'ChangeItemList',
                 Data => {
@@ -185,7 +185,7 @@ sub Run {
 
         # challenge token check for write action
         $LayoutObject->ChallengeTokenCheck();
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
         if ( $Self->{LightAdmin} ) {
 
             my %Queues = $QueueObject->QueueAutoResponseMemberList(
@@ -203,7 +203,7 @@ sub Run {
                 );
             }
         }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 
         my @NewIDs = ();
 
@@ -280,7 +280,7 @@ sub Run {
                 QueueHeader => $QueueHeader,
             },
         );
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
         if ( $Self->{LightAdmin} ) {
 
             # Filter out queues without permission.
@@ -293,7 +293,7 @@ sub Run {
                 delete $QueueData{$QueueID} if !$RwQueues{$QueueID};
             }
         }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 
         # if there are any queues, they are shown
         if (%QueueData) {
@@ -320,7 +320,7 @@ sub Run {
 
         # get valid Auto Response IDs
         my %AutoResponseList = $AutoResponseObject->AutoResponseList();
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
         if ( $Self->{LightAdmin} ) {
             for my $AutoResponseID ( sort keys %AutoResponseList ) {
                 my %Queues     = $QueueObject->QueueAutoResponseMemberList( AutoResponseID => $AutoResponseID );
@@ -334,7 +334,7 @@ sub Run {
                 }
             }
         }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 
         # if there are any auto responses, they are shown
         if ( keys %AutoResponseList ) {

@@ -40,11 +40,11 @@ sub new {
     );
 
     $Self->{IncludeInvalid} = $Preferences{ $Self->{PrefKeyIncludeInvalid} };
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
     if ( !$Param{AccessRw} && $Param{AccessRo} ) {
         $Self->{LightAdmin} = 1;
     }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
     return $Self;
 }
 
@@ -79,7 +79,7 @@ sub Run {
 
         my $Output = $LayoutObject->Header();
         $Output .= $LayoutObject->NavigationBar();
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
         if ( $Self->{LightAdmin} ) {
             my %Queues = $QueueObject->QueueAutoResponseMemberList( AutoResponseID => $ID );
             $Data{Permission} = $QueueObject->QueueListPermission(
@@ -99,7 +99,7 @@ sub Run {
                 );
             }
         }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
         $Self->_Edit(
             Action => 'Change',
             %Data,
@@ -140,7 +140,7 @@ sub Run {
                 $Errors{ $Needed . 'Invalid' } = 'ServerError';
             }
         }
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
         if ( $Self->{LightAdmin} ) {
             my %Queues = $QueueObject->QueueAutoResponseMemberList( AutoResponseID => $GetParam{ID} );
             my $Permission = $QueueObject->QueueListPermission(
@@ -154,7 +154,7 @@ sub Run {
                 $Errors{NoPermission} = 1;
             }
         }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 
         # if no errors occurred
         if ( !%Errors ) {
@@ -172,9 +172,7 @@ sub Run {
                     )
                 {
                     my $ID = $ParamObject->GetParam( Param => 'ID' ) || '';
-                    return $LayoutObject->Redirect(
-                        OP => "Action=$Self->{Action};Subaction=Change;ID=$ID"
-                    );
+                    return $LayoutObject->Redirect( OP => "Action=$Self->{Action};Subaction=Change;ID=$ID" );
                 }
                 else {
 
@@ -389,10 +387,10 @@ sub _Edit {
 sub _Overview {
     my ( $Self, %Param ) = @_;
 
-# Rother OSS /
     my $LayoutObject       = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
-# EO
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
     my $QueueObject  = $Kernel::OM->Get('Kernel::System::Queue');
+# EO LightAdmin-AutoRepliesAndSignatures
 
     $LayoutObject->Block(
         Name => 'Overview',
@@ -414,7 +412,7 @@ sub _Overview {
         Name => 'OverviewResult',
         Data => \%Param,
     );
-# Rother OSS /
+# Rother OSS / LightAdmin-AutoRepliesAndSignatures
     my $AutoResponseObject = $Kernel::OM->Get('Kernel::System::AutoResponse');
     my %List = $AutoResponseObject->AutoResponseList(
         Valid => $Self->{IncludeInvalid} ? 0 : 1,
@@ -437,7 +435,7 @@ sub _Overview {
             }
         }
     }
-# EO
+# EO LightAdmin-AutoRepliesAndSignatures
 
     # if there are any results, they are shown
     if (%List) {
