@@ -54,12 +54,12 @@ sub Run {
     my $QueueObject        = $Kernel::OM->Get('Kernel::System::Queue');
     my $AutoResponseObject = $Kernel::OM->Get('Kernel::System::AutoResponse');
 
+    # get Type Auto Responses data
+    my %TypeResponsesData = $AutoResponseObject->AutoResponseTypeList();
+
     if ( $Self->{Subaction} eq 'Change' ) {
         $Output .= $LayoutObject->Header();
         $Output .= $LayoutObject->NavigationBar();
-
-        # get Type Auto Responses data
-        my %TypeResponsesData = $AutoResponseObject->AutoResponseTypeList();
 
         # get queue data
         my %QueueData = $QueueObject->QueueGet(
@@ -188,19 +188,45 @@ sub Run {
 # Rother OSS / LightAdmin-AutoRepliesAndSignatures
         if ( $Self->{LightAdmin} ) {
 
-            my %Queues = $QueueObject->QueueAutoResponseMemberList(
-                AutoResponseID => $Param{ID}
-            );
+            # check if user has rw permissions on the QueueID
             my $Permission = $QueueObject->QueueListPermission(
                 QueueIDs => [ $Param{ID} ],
                 UserID   => $Self->{UserID},
             );
 
-            # No permission to change the template.
+            # no permission to change.
             if ( $Permission ne 'rw' ) {
                 return $LayoutObject->Redirect(
                     OP => "Action=$Self->{Action};Subaction=Change;ID=$Param{ID}"
                 );
+            }
+
+            # check if user has permissions on every AutoResponseID
+            CHECK_AUTO_RESPONSE_ID:
+            for my $TypeID ( sort keys %TypeResponsesData ) {
+                my $ParamAutoResponseID = $ParamObject->GetParam( Param => "IDs_$TypeID" );
+
+                next CHECK_AUTO_RESPONSE_ID if !$ParamAutoResponseID;
+                my %AutoResponseListByType = $AutoResponseObject->AutoResponseList( TypeID => $TypeID );
+
+                for my $AutoResponseID ( keys %AutoResponseListByType ) {
+                    my %Queues     = $QueueObject->QueueAutoResponseMemberList( AutoResponseID => $AutoResponseID );
+                    my $Permission = $QueueObject->QueueListPermission(
+                        QueueIDs => [ keys %Queues ],
+                        UserID   => $Self->{UserID},
+                        Default  => 'rw',
+                    );
+                    if ( $Permission ne 'rw' ) {
+                        delete $AutoResponseListByType{$AutoResponseID};
+                    }
+                }
+
+                # no permission to change.
+                if ( !$AutoResponseListByType{ $ParamAutoResponseID } ) {
+                    return $LayoutObject->Redirect(
+                        OP => "Action=$Self->{Action};Subaction=Change;ID=$Param{ID}"
+                    );
+                }
             }
         }
 # EO LightAdmin-AutoRepliesAndSignatures
