@@ -54,12 +54,12 @@ sub Run {
     my $QueueObject        = $Kernel::OM->Get('Kernel::System::Queue');
     my $AutoResponseObject = $Kernel::OM->Get('Kernel::System::AutoResponse');
 
-    # get Type Auto Responses data
-    my %TypeResponsesData = $AutoResponseObject->AutoResponseTypeList();
-
     if ( $Self->{Subaction} eq 'Change' ) {
         $Output .= $LayoutObject->Header();
         $Output .= $LayoutObject->NavigationBar();
+
+        # get Type Auto Responses data
+        my %TypeResponsesData = $AutoResponseObject->AutoResponseTypeList();
 
         # get queue data
         my %QueueData = $QueueObject->QueueGet(
@@ -200,6 +200,9 @@ sub Run {
                     OP => "Action=$Self->{Action};Subaction=Change;ID=$Param{ID}"
                 );
             }
+
+            # get Type Auto Responses data
+            my %TypeResponsesData = $AutoResponseObject->AutoResponseTypeList();
 
             # check if user has permissions on every AutoResponseID
             CHECK_AUTO_RESPONSE_ID:
