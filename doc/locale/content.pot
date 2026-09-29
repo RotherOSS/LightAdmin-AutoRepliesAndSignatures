@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Documentation dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-28 14:04+0000\n"
+"POT-Creation-Date: 2026-09-29 12:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../content/index.rst:27
 #: ../content/index.rst:31
-#: ../content/index.rst:43
+#: ../content/index.rst:50
 msgid "Not applicable"
 msgstr ""
 
@@ -67,53 +67,74 @@ msgid "Basic Configuration"
 msgstr ""
 
 #: ../content/index.rst:35
-msgid "Create a group, e.g. *light*"
-msgstr ""
-
-#: ../content/index.rst:36
-msgid "Add the group to the *GroupRo* setting of **Frontend::Module###Admin**"
+msgid "Create a group, e.g. *light* and add the group to the *GroupRo* setting of:"
 msgstr ""
 
 #: ../content/index.rst:37
-msgid "Add the group to the *GroupRo* setting of **Frontend::Module###AdminSignature**"
-msgstr ""
-
 #: ../content/index.rst:38
-msgid "Add the group to the *GroupRo* setting of **Frontend::Module###AdminAutoResponse**"
+msgid "Frontend::Module###Admin"
 msgstr ""
 
 #: ../content/index.rst:39
-msgid "Add the group to the *GroupRo* setting of **Frontend::Module###AdminQueueAutoResponse**"
+msgid "Frontend::NavigationModule###Admin"
+msgstr ""
+
+#: ../content/index.rst:40
+msgid "Frontend::Navigation###Admin###001-Framework"
+msgstr ""
+
+#: ../content/index.rst:41
+msgid "Frontend::Module###AdminSignature"
 msgstr ""
 
 #: ../content/index.rst:42
-msgid "Configuration Reference"
+msgid "Frontend::NavigationModule###AdminSignature"
+msgstr ""
+
+#: ../content/index.rst:43
+msgid "Frontend::Module###AdminAutoResponse"
+msgstr ""
+
+#: ../content/index.rst:44
+msgid "Frontend::NavigationModule###AdminAutoResponse"
+msgstr ""
+
+#: ../content/index.rst:45
+msgid "Frontend::Module###AdminQueueAutoResponse"
 msgstr ""
 
 #: ../content/index.rst:46
-msgid "About"
+msgid "Frontend::NavigationModule###AdminQueueAutoResponse**"
 msgstr ""
 
 #: ../content/index.rst:49
-msgid "Contact"
+msgid "Configuration Reference"
 msgstr ""
 
-#: ../content/index.rst:50
-msgid "Rother OSS GmbH"
-msgstr ""
-
-#: ../content/index.rst:51
-msgid "Email: hello@otobo.io"
-msgstr ""
-
-#: ../content/index.rst:52
-msgid "Web: https://otobo.io"
-msgstr ""
-
-#: ../content/index.rst:55
-msgid "Version"
+#: ../content/index.rst:53
+msgid "About"
 msgstr ""
 
 #: ../content/index.rst:56
+msgid "Contact"
+msgstr ""
+
+#: ../content/index.rst:57
+msgid "Rother OSS GmbH"
+msgstr ""
+
+#: ../content/index.rst:58
+msgid "Email: hello@otobo.io"
+msgstr ""
+
+#: ../content/index.rst:59
+msgid "Web: https://otobo.io"
+msgstr ""
+
+#: ../content/index.rst:62
+msgid "Version"
+msgstr ""
+
+#: ../content/index.rst:63
 msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
 msgstr ""
