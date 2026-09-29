@@ -31,11 +31,18 @@ Not applicable
 
 Basic Configuration
 -------------------
-1. Create a group, e.g. *light*
-2. Add the group to the *GroupRo* setting of **Frontend::Module###Admin**
-3. Add the group to the *GroupRo* setting of **Frontend::Module###AdminSignature**
-4. Add the group to the *GroupRo* setting of **Frontend::Module###AdminAutoResponse**
-5. Add the group to the *GroupRo* setting of **Frontend::Module###AdminQueueAutoResponse**
+Create a group, e.g. *light* and add the group to the *GroupRo* setting of:
+
+- Frontend::Module###Admin
+- Frontend::Module###Admin
+- Frontend::NavigationModule###Admin
+- Frontend::Navigation###Admin###001-Framework
+- Frontend::Module###AdminSignature
+- Frontend::NavigationModule###AdminSignature
+- Frontend::Module###AdminAutoResponse
+- Frontend::NavigationModule###AdminAutoResponse
+- Frontend::Module###AdminQueueAutoResponse
+- Frontend::NavigationModule###AdminQueueAutoResponse**
 
 Configuration Reference
 -----------------------
