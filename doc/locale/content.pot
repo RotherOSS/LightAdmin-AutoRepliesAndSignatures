@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Documentation dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-29 12:44+0000\n"
+"POT-Creation-Date: 2026-10-01 07:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,125 +16,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../content/index.rst:5
+#: ../content/index.rst:1
 msgid "Contents"
 msgstr ""
 
+#: ../content/index.rst:6
+msgid "Description"
+msgstr ""
+
+#: ../content/index.rst:7
+msgid "Enable the LightAdmin capability for the Signature and Auto Response features."
+msgstr ""
+
 #: ../content/index.rst:10
-msgid "Overview"
-msgstr ""
-
-#: ../content/index.rst:12
-msgid "Summary"
-msgstr ""
-
-#: ../content/index.rst:13
-msgid "This package provides the Signature and the Auto Response management features with LightAdmin capabilities."
-msgstr ""
-
-#: ../content/index.rst:16
-msgid "Configuration"
-msgstr ""
-
-#: ../content/index.rst:19
 msgid "System requirements"
 msgstr ""
 
-#: ../content/index.rst:22
+#: ../content/index.rst:13
 msgid "Framework"
 msgstr ""
 
-#: ../content/index.rst:23
+#: ../content/index.rst:14
 msgid "OTOBO 11.0.x"
 msgstr ""
 
-#: ../content/index.rst:26
+#: ../content/index.rst:17
 msgid "Packages"
 msgstr ""
 
-#: ../content/index.rst:27
-#: ../content/index.rst:31
-#: ../content/index.rst:50
-msgid "Not applicable"
+#: ../content/index.rst:18
+#: ../content/index.rst:22
+msgid "\\-"
 msgstr ""
 
-#: ../content/index.rst:30
+#: ../content/index.rst:21
 msgid "Third-party software"
 msgstr ""
 
-#: ../content/index.rst:34
+#: ../content/index.rst:25
 msgid "Basic Configuration"
 msgstr ""
 
-#: ../content/index.rst:35
-msgid "Create a group, e.g. *light* and add the group to the *GroupRo* setting of:"
+#: ../content/index.rst:26
+msgid "If not yet present, create a group for the light admin, e.g. *light*, and add it to the *GroupRo* key of the following settings. For the basic access:"
 msgstr ""
 
-#: ../content/index.rst:37
-#: ../content/index.rst:38
+#: ../content/index.rst:28
 msgid "Frontend::Module###Admin"
 msgstr ""
 
-#: ../content/index.rst:39
-msgid "Frontend::NavigationModule###Admin"
-msgstr ""
-
-#: ../content/index.rst:40
-msgid "Frontend::Navigation###Admin###001-Framework"
-msgstr ""
-
-#: ../content/index.rst:41
+#: ../content/index.rst:29
 msgid "Frontend::Module###AdminSignature"
 msgstr ""
 
-#: ../content/index.rst:42
-msgid "Frontend::NavigationModule###AdminSignature"
-msgstr ""
-
-#: ../content/index.rst:43
+#: ../content/index.rst:30
 msgid "Frontend::Module###AdminAutoResponse"
 msgstr ""
 
-#: ../content/index.rst:44
-msgid "Frontend::NavigationModule###AdminAutoResponse"
-msgstr ""
-
-#: ../content/index.rst:45
+#: ../content/index.rst:31
 msgid "Frontend::Module###AdminQueueAutoResponse"
 msgstr ""
 
-#: ../content/index.rst:46
-msgid "Frontend::NavigationModule###AdminQueueAutoResponse**"
+#: ../content/index.rst:33
+msgid "And to provide the navigation entries:"
 msgstr ""
 
-#: ../content/index.rst:49
-msgid "Configuration Reference"
+#: ../content/index.rst:35
+msgid "Frontend::NavigationModule###Admin"
 msgstr ""
 
-#: ../content/index.rst:53
+#: ../content/index.rst:36
+msgid "Frontend::Navigation###Admin###001-Framework"
+msgstr ""
+
+#: ../content/index.rst:37
+msgid "Frontend::NavigationModule###AdminSignature"
+msgstr ""
+
+#: ../content/index.rst:38
+msgid "Frontend::NavigationModule###AdminAutoResponse"
+msgstr ""
+
+#: ../content/index.rst:39
+msgid "Frontend::NavigationModule###AdminQueueAutoResponse"
+msgstr ""
+
+#: ../content/index.rst:42
 msgid "About"
 msgstr ""
 
-#: ../content/index.rst:56
+#: ../content/index.rst:45
 msgid "Contact"
 msgstr ""
 
-#: ../content/index.rst:57
+#: ../content/index.rst:46
 msgid "Rother OSS GmbH"
 msgstr ""
 
-#: ../content/index.rst:58
+#: ../content/index.rst:47
 msgid "Email: hello@otobo.io"
 msgstr ""
 
-#: ../content/index.rst:59
+#: ../content/index.rst:48
 msgid "Web: https://otobo.io"
 msgstr ""
 
-#: ../content/index.rst:62
+#: ../content/index.rst:51
 msgid "Version"
 msgstr ""
 
-#: ../content/index.rst:63
+#: ../content/index.rst:52
 msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
 msgstr ""
