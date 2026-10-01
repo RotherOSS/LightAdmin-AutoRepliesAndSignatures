@@ -1,52 +1,45 @@
-.. image:: ../images/otobo-logo.png
-   :align: center
-
 .. toctree::
     :maxdepth: 2
     :caption: Contents
 
-Overview
-========
-Summary
--------
-This package provides the Signature and the Auto Response management features with LightAdmin capabilities.
+Sacrifice to Sphinx
+===================
 
-Configuration
-=============
+Description
+===========
+Enable the LightAdmin capability for the Signature and Auto Response features.
 
 System requirements
--------------------
+===================
 
 Framework
-^^^^^^^^^
+---------
 OTOBO 11.0.x
 
 Packages
-^^^^^^^^
-Not applicable
+--------
+\-
 
 Third-party software
-^^^^^^^^^^^^^^^^^^^^
-Not applicable
+--------------------
+\-
 
 Basic Configuration
--------------------
-Create a group, e.g. *light* and add the group to the *GroupRo* setting of:
+===================
+If not yet present, create a group for the light admin, e.g. *light*, and add it to the *GroupRo* key of the following settings. For the basic access:
 
 - Frontend::Module###Admin
-- Frontend::Module###Admin
+- Frontend::Module###AdminSignature
+- Frontend::Module###AdminAutoResponse
+- Frontend::Module###AdminQueueAutoResponse
+
+And to provide the navigation entries:
+
 - Frontend::NavigationModule###Admin
 - Frontend::Navigation###Admin###001-Framework
-- Frontend::Module###AdminSignature
 - Frontend::NavigationModule###AdminSignature
-- Frontend::Module###AdminAutoResponse
 - Frontend::NavigationModule###AdminAutoResponse
-- Frontend::Module###AdminQueueAutoResponse
-- Frontend::NavigationModule###AdminQueueAutoResponse**
-
-Configuration Reference
------------------------
-Not applicable
+- Frontend::NavigationModule###AdminQueueAutoResponse
 
 About
 =======
