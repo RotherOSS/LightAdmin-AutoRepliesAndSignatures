@@ -6,7 +6,8 @@
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.io/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <Description Lang="en">Enable the LightAdmin capability for the Signature and Auto Response features</Description>
+    <Description Lang="en">Enables the LightAdmin capability for the signature and auto response features.</Description>
+    <Description Lang="hu">Egyszerűsített adminisztrátori képességet engedélyez az aláírásnál és az automatikus válasz funkcióknál.</Description>
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/AdminAutoResponse.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/AdminQueueAutoResponse.pm" />
