@@ -25,7 +25,7 @@ msgid "Description"
 msgstr ""
 
 #: ../content/index.rst:7
-msgid "Enable the LightAdmin capability for the Signature and Auto Response features."
+msgid "Enables the LightAdmin capability for the signature and auto response features."
 msgstr ""
 
 #: ../content/index.rst:10

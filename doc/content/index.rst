@@ -7,7 +7,7 @@ Sacrifice to Sphinx
 
 Description
 ===========
-Enable the LightAdmin capability for the Signature and Auto Response features.
+Enables the LightAdmin capability for the signature and auto response features.
 
 System requirements
 ===================

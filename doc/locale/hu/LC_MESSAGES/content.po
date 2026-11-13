@@ -1,0 +1,146 @@
+# Hungarian translations for LightAdmin-AutoRepliesAndSignatures Documentation.
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# This file is distributed under the same license as the LightAdmin-AutoRepliesAndSignatures documentation.
+#
+# Balázs Úr <balazs@urbalazs.hu>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: LightAdmin-AutoRepliesAndSignatures Documentation "
+"11.0.2\n"
+"Report-Msgid-Bugs-To: https://github.com/RotherOSS/LightAdmin-"
+"AutoRepliesAndSignatures/issues\n"
+"POT-Creation-Date: 2026-10-01 07:05+0000\n"
+"PO-Revision-Date: 2026-11-13 10:07+0100\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian <https://translate.otobo.org/projects/otobo-11-0/"
+"addons/manuals/lightadmin-autorepliesandsignatures-documentation/hu/>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 26.08.1\n"
+
+#: ../content/index.rst:1
+msgid "Contents"
+msgstr "Tartalom"
+
+#: ../content/index.rst:6
+msgid "Description"
+msgstr "Leírás"
+
+#: ../content/index.rst:7
+msgid ""
+"Enables the LightAdmin capability for the signature and auto response "
+"features."
+msgstr ""
+"Egyszerűsített adminisztrátori képességet engedélyez az aláírásnál és az "
+"automatikus válasz funkcióknál."
+
+#: ../content/index.rst:10
+msgid "System requirements"
+msgstr "Rendszerkövetelmények"
+
+#: ../content/index.rst:13
+msgid "Framework"
+msgstr "Keretrendszer"
+
+#: ../content/index.rst:14
+msgid "OTOBO 11.0.x"
+msgstr "OTOBO 11.0.x"
+
+#: ../content/index.rst:17
+msgid "Packages"
+msgstr "Csomagok"
+
+#: ../content/index.rst:18 ../content/index.rst:22
+msgid "\\-"
+msgstr "\\-"
+
+#: ../content/index.rst:21
+msgid "Third-party software"
+msgstr "Harmadik féltől származó szoftverek"
+
+#: ../content/index.rst:25
+msgid "Basic Configuration"
+msgstr "Alapvető beállítás"
+
+#: ../content/index.rst:26
+msgid ""
+"If not yet present, create a group for the light admin, e.g. *light*, and "
+"add it to the *GroupRo* key of the following settings. For the basic access:"
+msgstr ""
+"Ha még nincs ilyen, hozzon létre egy csoportot az egyszerűsített "
+"adminisztrátornak, például *light*, és adja hozzá az alábbi beállítások "
+"*GroupRo* kulcsához. Az alapvető hozzáféréshez:"
+
+#: ../content/index.rst:28
+msgid "Frontend::Module###Admin"
+msgstr "Frontend::Module###Admin"
+
+#: ../content/index.rst:29
+msgid "Frontend::Module###AdminSignature"
+msgstr "Frontend::Module###AdminSignature"
+
+#: ../content/index.rst:30
+msgid "Frontend::Module###AdminAutoResponse"
+msgstr "Frontend::Module###AdminAutoResponse"
+
+#: ../content/index.rst:31
+msgid "Frontend::Module###AdminQueueAutoResponse"
+msgstr "Frontend::Module###AdminQueueAutoResponse"
+
+#: ../content/index.rst:33
+msgid "And to provide the navigation entries:"
+msgstr "És a navigációs bejegyzések biztosításához:"
+
+#: ../content/index.rst:35
+msgid "Frontend::NavigationModule###Admin"
+msgstr "Frontend::NavigationModule###Admin"
+
+#: ../content/index.rst:36
+msgid "Frontend::Navigation###Admin###001-Framework"
+msgstr "Frontend::Navigation###Admin###001-Framework"
+
+#: ../content/index.rst:37
+msgid "Frontend::NavigationModule###AdminSignature"
+msgstr "Frontend::NavigationModule###AdminSignature"
+
+#: ../content/index.rst:38
+msgid "Frontend::NavigationModule###AdminAutoResponse"
+msgstr "Frontend::NavigationModule###AdminAutoResponse"
+
+#: ../content/index.rst:39
+msgid "Frontend::NavigationModule###AdminQueueAutoResponse"
+msgstr "Frontend::NavigationModule###AdminQueueAutoResponse"
+
+#: ../content/index.rst:42
+msgid "About"
+msgstr "Névjegy"
+
+#: ../content/index.rst:45
+msgid "Contact"
+msgstr "Kapcsolat"
+
+#: ../content/index.rst:46
+msgid "Rother OSS GmbH"
+msgstr "Rother OSS GmbH"
+
+#: ../content/index.rst:47
+msgid "Email: hello@otobo.io"
+msgstr "E-mail: hello@otobo.io"
+
+#: ../content/index.rst:48
+msgid "Web: https://otobo.io"
+msgstr "Web: https://otobo.io"
+
+#: ../content/index.rst:51
+msgid "Version"
+msgstr "Verzió"
+
+#: ../content/index.rst:52
+msgid ""
+"Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
+"datestamp|"
+msgstr ""
+"Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-datestamp|"
